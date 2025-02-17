@@ -1,22 +1,22 @@
-import Header from "./Partials/Header"
-import Navbar from "./Partials/Navbar"
-import Upload from "./Upload"
-import Tagging from "./Tagging"
-import Annot_button from "./Annot_button"
-import Annot_area from "./Annot_area"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./Partials/Navbar";
+import Home from "./Home";
+import NER from "./NER";
+import CoReference from "./CoReference";
+import About from "./About";
 
 function App() {
-
   return (
-    <>
+    <Router>
       <Navbar />
-      <Header />
-      <Upload />
-      <Tagging />
-      <Annot_button />
-      <Annot_area />
-    </>
-  )
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/ner" element={<NER />} />
+        <Route path="/coreference" element={<CoReference />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;

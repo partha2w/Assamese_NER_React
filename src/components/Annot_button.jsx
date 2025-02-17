@@ -1,5 +1,7 @@
 function Annot_button(){
-    return (<>
+    return (
+    <div className="sides_margin">
+
         <button id="annotate-btn" class="button-18">Annotate Text</button>
         <div class="final-btn">
         <form>
@@ -15,7 +17,7 @@ function Annot_button(){
         </form>
         <button id="download-btn" class="button-7">Download Annotations</button>
         </div>
-    </>)
+    </div>)
 }
 
 export default Annot_button;
