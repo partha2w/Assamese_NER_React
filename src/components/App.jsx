@@ -7,15 +7,15 @@ import About from "./About";
 
 function App() {
   return (
-    <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/ner" element={<NER />} />
-        <Route path="/coreference" element={<CoReference />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
-    </Router>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/ner" element={<NER />} />
+          <Route path="/coreference" element={<CoReference />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </Router>
   );
 }
 

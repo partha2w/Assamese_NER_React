@@ -2,7 +2,8 @@ function CoReference() {
 
     return (
       <>
-       <h1>This is CoReference</h1>
+       {/* add corefernce page */}
+       
       </>
     )
   }
